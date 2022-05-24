@@ -10,15 +10,9 @@ RUN set -ex; \
     && apt-get install -y --no-install-recommends \
         dbus-x11 \
         nautilus \
-        gedit \
-        virtualbox \
-        python2 \
         pip \
         python-pip \
         expect \
-        sudo \
-        vim \
-	vlc \
         bash \
         net-tools \
         novnc \
@@ -29,27 +23,16 @@ RUN set -ex; \
         supervisor \
         curl \
         git \
-	pulseaudio \
         wget \
-        g++ \
 	unzip \
         ssh \
 	ffmpeg \
-	obs-studio \
-	chromium-browser \
 	firefox \
         terminator \
         htop \
         gnupg2 \
 	locales \
-	xfonts-intl-chinese \
-	fonts-wqy-microhei \  
-	ibus-pinyin \
-	ibus \
-	ibus-clutter \
-	ibus-gtk \
-	ibus-gtk3 \
-	ibus-qt4
+
  RUN apt-get autoclean \
  RUN apt-get autoremove \
  RUN rm -rf /var/lib/apt/lists/*
