@@ -49,10 +49,10 @@ RUN set -ex; \
 	ibus-clutter \
 	ibus-gtk \
 	ibus-gtk3 \
-	ibus-qt4 \
-    && apt-get autoclean \
-    && apt-get autoremove \
-    && rm -rf /var/lib/apt/lists/*
+	ibus-qt4
+ RUN apt-get autoclean \
+ RUN apt-get autoremove \
+ RUN rm -rf /var/lib/apt/lists/*
 RUN dpkg-reconfigure locales
 
 COPY . /app
