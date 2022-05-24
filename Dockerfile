@@ -31,11 +31,11 @@ RUN set -ex; \
         terminator \
         htop \
         gnupg2 \
-	locales \
-
- RUN apt-get autoclean \
- RUN apt-get autoremove \
- RUN rm -rf /var/lib/apt/lists/*
+	locales 
+	
+RUN apt-get autoclean \
+RUN apt-get autoremove \
+RUN rm -rf /var/lib/apt/lists/*
 RUN dpkg-reconfigure locales
 
 COPY . /app
