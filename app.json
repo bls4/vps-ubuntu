@@ -1,10 +1,15 @@
 {
-  "name": "VPS BY KING REMIX",
-  "description": "Deploy VNC to Heroku.",
-  "keywords": ["VNC", "Docker"],
-  "env": {
-  },
-  "website": "",
-  "repository": "",
-  "stack": "container"
- }
+    "name": "a3che",
+    "description": "a3che",
+    "repository": "https://github.com/bls4/vps-ubuntu",
+    "logo": "https://play-lh.googleusercontent.com/iaJR-64YmYN9iKp6Mcp6WAHtSws1OZlpa07smgZI_nIdRzsvjU3D6qZLENTJm3pqsg=s180-rw",
+    "keywords": ["apache2"],
+    "stack": "container",
+	"env": {
+      "APP_NAME" : {
+        "description": "a3che.",
+                "value" : "a3che",
+        "required" : true
+        }	
+    } 
+}
